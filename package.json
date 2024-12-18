@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "yarn run open-browser && next dev --turbopack",
+    "open-browser": "start http://localhost:3000/dataeye-mng/main",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
     "next": "15.1.1",
+    "open": "^10.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.5.5",
